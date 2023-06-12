@@ -1,0 +1,10 @@
+.logo {
+  cursor: pointer;
+
+  svg {
+    @media  all and (max-width: 800px) {
+      width: 64px;
+      height: 30px;
+    }
+  }
+}

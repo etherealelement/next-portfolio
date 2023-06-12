@@ -1,0 +1,67 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 28px 0 21px;
+  z-index: 1;
+  background: rgba(21, 36, 72, 0.2);
+  backdrop-filter: blur(125px);
+
+  @media  all and (max-width: 800px) {
+    padding: 24px 0;
+  }
+
+
+
+  &Container {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+
+    &Nav {
+      width: 70%;
+      
+      @media  all and (max-width: 1440px) {
+        width: 70%;
+      }
+
+      @media  all and (max-width: 1080px) {
+        width: 75.4%;
+      }
+
+      @media  all and (max-width: 800px) {
+        width: 83%;
+      }
+
+
+      &List {
+        display: flex;
+        gap: 48px;
+        align-items: center;
+
+        @media  all and (max-width: 1080px) {
+          gap: 40px;
+        }
+        &Items {
+          font-family: 'Lato';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 128.9%;
+          transition: all .3s ease-in-out;
+          &:hover { opacity: .3}
+
+          @media  all and (max-width: 1080px) {
+            font-size: 18px;
+          }
+          a{
+            color: #F2F2F2;
+
+          }
+        }
+      }
+    }
+  }
+}

@@ -30,6 +30,17 @@ a {
     margin: 0 auto;
 }
 
+@media  all and (max-width: 1080px) {
+    .container {
+        padding: 0 32px;
+    }
+
+    .sub-container {
+        max-width: 833px;
+
+    }
+}
+
 @media all and (max-width: 1080px) {
     .container {
         padding: 0 32px;
@@ -39,6 +50,10 @@ a {
         max-width: 833px;
     }
 }
+
+
+
+
 
 @media all and (max-width: 800px) {
     .container, .sub-container {
