@@ -66,6 +66,9 @@
   }
 }
 
+//Burger Menu
+
+
 .burgerMenu {
   width: 64px;
   height: 30px;
@@ -76,6 +79,10 @@
   border: none;
   margin: 0;
   padding: 0;
+  
+  @media all and (max-width: 485px) {
+    height: 40px;
+  }
 }
 
 .burgerMenu span {
@@ -92,6 +99,13 @@
   top: 0;
   left: 0;
 
+}
+//ListReset
+
+.listReset {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .burgerMenu span:nth-child(2) {

@@ -5,10 +5,12 @@ import styles from "./Header.module.scss";
 import Link from "next/link";
 import "../../globals.css";
 import {useMediaQuery} from "@/app/hooks";
+import stylesMenu from "./Mobilemenu.module.scss";
 
 export const Header: FC = () => {
     const isMobile = useMediaQuery(640);
     const [menuOpen, setMenuOpen] = useState(false)
+    const currentMenuItemClass = isMobile ? stylesMenu.menuItem : styles.headerContainerNavListItems;
     const handleToggleMenu = () => {
         (document.querySelector("body") as HTMLBodyElement).classList.toggle("overflow-hidden");
         setMenuOpen(!menuOpen);
@@ -29,9 +31,9 @@ export const Header: FC = () => {
                        <span></span>
                        <span></span>
                    </button>}
-                   <nav className={styles.headerContainerNav}>
-                       <ul className={styles.headerContainerNavList}>
-                           <li className={styles.headerContainerNavListItems}>
+                   <nav className={`${isMobile ? stylesMenu.menu : styles.headerContainerNav} ${menuOpen ? stylesMenu.open : ""}`}>
+                       <ul className={`${isMobile ? styles.listReset : styles.headerContainerNavList}`}>
+                           <li className={currentMenuItemClass}>
                                <Link
                                    className={styles.headerContainerNavListItemsLink}
                                    href="/"
@@ -39,7 +41,7 @@ export const Header: FC = () => {
                                    Обо мне
                                </Link>
                            </li>
-                           <li className={styles.headerContainerNavListItems}>
+                           <li className={currentMenuItemClass}>
                                <Link
                                    className={styles.headerContainerNavListItemsLink}
                                    href="/"
@@ -48,7 +50,7 @@ export const Header: FC = () => {
                                </Link>
 
                            </li>
-                           <li className={styles.headerContainerNavListItems}>
+                           <li className={currentMenuItemClass}>
 
                                <Link
                                    className={styles.headerContainerNavListItemsLink}
@@ -57,7 +59,7 @@ export const Header: FC = () => {
                                    Портфолио
                                </Link>
                            </li>
-                           <li className={styles.headerContainerNavListItems}>
+                           <li className={currentMenuItemClass}>
                                <Link
                                    className={styles.headerContainerNavListItemsLink}
                                    href="/"
