@@ -1,4 +1,5 @@
 import {Header} from "@/app/components/header/Header";
+import {Hero} from "@/app/components/hero/Hero";
 
 
 export default function Home() {
@@ -6,12 +7,13 @@ export default function Home() {
         <>
             <Header></Header>
             <main>
-                <div className="background-animation">
-                    <div id="ball-one"></div>
-                    <div id="ball-two"></div>
-                    <div id="ball-three"></div>
-                </div>
+                <Hero></Hero>
             </main>
+            <div className="background-animation">
+                <div id="ball-one"></div>
+                <div id="ball-two"></div>
+                <div id="ball-three"></div>
+            </div>
         </>
     )
 }
