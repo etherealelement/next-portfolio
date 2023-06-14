@@ -1,0 +1,15 @@
+.title {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  color: #06CAF9;
+  margin-bottom: 50px;
+  &Span {
+    background: linear-gradient(89.99deg, #00D1FF 0%, rgba(255, 34, 141, 0) 100%);
+    height: 3px;
+    margin-top: 16px;
+    display: block;
+  }
+}
