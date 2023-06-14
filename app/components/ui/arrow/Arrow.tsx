@@ -1,6 +1,11 @@
+"use client";
 import { FC } from 'react';
+import {useMediaQuery} from "@/app/hooks";
 
 export const Arrow: FC = () => {
+    const isMobile = useMediaQuery(1080)
+    const currentWidth = isMobile ? 54: 80
+    const currentHeight = isMobile ? 54: 80
     return <>
         <svg width="80" height="60" viewBox="0 0 80 60" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g style={{mixBlendMode: "saturation"}}>

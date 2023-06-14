@@ -1,3 +1,4 @@
+"use client"
 import {FC} from 'react';
 import styles from "./About.module.scss"
 import {Title} from "@/app/components/ui/title/Title";
@@ -5,8 +6,14 @@ import Image from "next/image";
 import {Arrow} from "@/app/components/ui/arrow/Arrow";
 import {SocialList} from "@/app/components/about/SocialList";
 import "../../globals.css"
+import {useMediaQuery} from "@/app/hooks";
 
 export const About: FC = () => {
+    const isMobile1080 = useMediaQuery(1080)
+    const isMobile600 = useMediaQuery(600)
+    const isMobile390 = useMediaQuery(390)
+
+
     return <section className={styles.about} id="about">
         <div className="container">
             <Title>ОБО МНЕ</Title>
@@ -36,8 +43,12 @@ export const About: FC = () => {
                     Я ищу, чтобы взять на себя больше работы и повысить<br/> свои навыки в качестве веб-разработчика.
                 </p>
 
-                <SocialList></SocialList>
+                {!isMobile1080 && <SocialList></SocialList>}
             </div>
+        </div>
+        <div className="sub-container">
+            {isMobile1080  && <SocialList></SocialList>}
+
         </div>
     </section>;
 };
