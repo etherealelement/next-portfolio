@@ -1,0 +1,50 @@
+.about{
+  padding-top: 140px;
+  padding-bottom: 70px;
+
+  &SubContainer {
+    padding-top: 56px;
+    display: flex;
+    align-items: flex-start;
+    &Img {
+      margin-right: 32px;
+      width: 48.6%;
+    }
+    &Inner {
+      &Title {
+        font-family: 'Raleway';
+        font-weight: 600;
+        font-size: 36px;
+        color: #F2F2F2;
+        padding-bottom: 12px;
+
+      }
+      &Border {
+        padding-top: 17px;
+        position: relative;
+        display: block;
+        height: 60px;
+
+        &Arrow svg{
+          position: absolute;
+          top: -12px;
+          left: -20px;
+        }
+
+        &Line {
+          display: block;
+          height: 2px;
+          background: linear-gradient(89.99deg, #00D1FF 0%, rgba(255, 34, 141, 0) 100%);
+        }
+      }
+      &Descr {
+        font-family: 'Lato';
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 128.9%;
+        color: #F2F2F2;
+        margin-bottom: 56px;
+      }
+    }
+  }
+}

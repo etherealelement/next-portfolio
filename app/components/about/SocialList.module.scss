@@ -1,0 +1,91 @@
+.socialList {
+  padding: 0;
+  margin: 0;
+
+  &Item {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+
+    &Link {
+      display: flex;
+      align-items: center;
+      margin-right: 24px;
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 128.9%;
+      text-decoration-line: underline;
+      color: #0CAED5;
+
+      &Spn {
+        color: #0CAED5;
+        margin-right: 24px;
+      }
+
+
+      &:hover {
+        background: radial-gradient(142.65% 2282.99% at 100% -31.65%, #08A6CE 0%, #6352B1 43.75%, #8B0EB7 68.75%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+      }
+
+      &:hover &IconFb {
+        background-color: #6682C1;
+        transition: background-color .3s ease-in-out;
+      }
+
+      &:hover &IconVk {
+        background-color: #7294C7;
+        transition: background-color .3s ease-in-out;
+      }
+
+      &:hover &IconYt {
+        background-color: #F40000;
+        transition: background-color .3s ease-in-out;
+      }
+
+
+      &Icon {
+        position: relative;
+        display: inline-block;
+        border: 2px solid ;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+
+        &Img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 1;
+        }
+      }
+
+      &IconFb img {
+        top: 3px;
+        left: 9px;
+      }
+
+      &IconVk img {
+        top: 11px;
+        left: 6px;
+      }
+
+      &IconYt img {
+        top: 10px;
+        left: 7px;
+      }
+    }
+  }
+}
+
