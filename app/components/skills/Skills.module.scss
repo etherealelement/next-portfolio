@@ -1,0 +1,14 @@
+.skills {
+  padding-top: 67px;
+  padding-bottom: 50px;
+
+
+  &List {
+    padding-top: 52px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 32px;
+    grid-row-gap: 105px;
+  }
+}
