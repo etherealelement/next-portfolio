@@ -2,6 +2,9 @@
   padding-top: 67px;
   padding-bottom: 50px;
 
+  @media all and (max-width: 1080px) {
+    padding-top: 48px;
+  }
 
   &List {
     padding-top: 52px;
@@ -10,5 +13,16 @@
     grid-template-rows: 1fr 1fr;
     grid-column-gap: 32px;
     grid-row-gap: 105px;
+
+    @media all and (max-width: 1080px) {
+      padding-top: 39px;
+      grid-column-gap: 24px;
+      grid-row-gap: 85px;
+    }
+
+    @media all and (max-width: 615px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+    }
   }
 }
