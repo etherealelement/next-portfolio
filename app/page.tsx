@@ -2,6 +2,7 @@ import {Header} from "@/app/components/header/Header";
 import {Hero} from "@/app/components/hero/Hero";
 import {About} from "@/app/components/about/About";
 import {Skills} from "@/app/components/skills/Skills";
+import {Portfolio} from "@/app/components/portfolio/Portfolio";
 
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
                 <Hero></Hero>
                 <About></About>
                 <Skills></Skills>
+                <Portfolio></Portfolio>
             </main>
             <div className="background-animation">
                 <div id="ball-one"></div>

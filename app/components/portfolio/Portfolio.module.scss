@@ -1,0 +1,18 @@
+.portfolio {
+  margin-top: 140px;
+  &List {
+    margin-top: 104px;
+  }
+
+  &GridContainer {
+    margin-top: 74px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 122px;
+
+    @media all and (max-width: 1080px) {
+      grid-template-columns: 1fr;
+      width: 50%;
+    }
+  }
+}
