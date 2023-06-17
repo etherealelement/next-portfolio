@@ -10,9 +10,32 @@
     grid-template-columns: 1fr 1fr;
     grid-row-gap: 122px;
 
+    @media all and (max-width: 600px) {
+      grid-template-columns: 2fr;
+      justify-content: center;
+      align-content: center;
+    }
+
+
+    @media all and (max-width: 1040px) {
+      display: grid;
+      grid-template-columns: 2fr;
+      justify-content: center;
+      align-content: center;
+    }
+
+    @media all and (max-width: 950px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: center;
+      align-content: center;
+    }
+
     @media all and (max-width: 1080px) {
-      grid-template-columns: 1fr;
-      width: 50%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: center;
+      align-content: center;
     }
   }
 }

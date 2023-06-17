@@ -17,6 +17,11 @@
     margin-top: 0;
   }
 
+  @media all and (max-width: 1080px) {
+    display: block;
+    margin-top: 0;
+  }
+
 
   &Item {
     position: relative;

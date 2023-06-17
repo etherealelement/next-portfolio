@@ -7,3 +7,34 @@
   line-height: 128.9%;
   color: #F2F2F2;
 }
+
+.content{
+  transition: all .3s ease-in-out;
+
+  @media all and (max-width: 600px) {
+    justify-content: center;
+    display: flex;
+  }
+
+  &Link {
+    @media all and (max-width: 600px) {
+      max-width: 200px;
+    }
+  }
+  &:hover {
+    box-shadow:
+            1px 1px transparent,
+            2px 2px transparent,
+            3px 3px transparent,
+            4px 4px transparent,
+            5px 5px transparent,
+            6px 6px transparent,
+            7px 7px transparent;
+    -webkit-transform: translateX(-7px);
+    transform: translateX(-7px);
+  }
+}
+
+.contentLinkImg {
+  border-radius: 50px;
+}
