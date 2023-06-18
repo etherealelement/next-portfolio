@@ -3,6 +3,7 @@ import {Title} from "@/app/components/ui/title/Title";
 import styles from "./Contact.module.scss";
 import {Arrow} from "@/app/components/ui/arrow/Arrow";
 import {SocialList} from "@/app/components/contact/SocialList/SocialList";
+import {ContactForm} from "@/app/components/contact/ContactForm/ContactForm";
 export const Contact: FC = () => {
     return <section id="contact" className={styles.contact}>
             <div className="container">
@@ -12,7 +13,7 @@ export const Contact: FC = () => {
             <div className={styles.contactInner}>
                 <div className={styles.contactInnerLeft}>
                     <p className={styles.contactInnerLeftText}>
-                        Вы работаете над чем-то великим?<br/>Я с удовольствием помогу вам в этом!<br/>Напишите мне письмо и мы начнем проект прямо сейчас!<br/>Просто сделай это)
+                        Вы работаете над чем-то великим?<br/>Я с удовольствием помогу вам в этом!<br/>Напишите мне письмо и мы начнем проект<br></br> прямо сейчас!<br/>Просто сделай это)
                     </p>
                     <h3 className={styles.contactInnerLeftTitle}>
                         <span className={styles.contactInnerLeftTitleText}>Я в соцсетях:</span>
@@ -21,7 +22,9 @@ export const Contact: FC = () => {
                     </h3>
                     <SocialList></SocialList>
                 </div>
-                <div className={styles.contactInnerRight}></div>
+                <div className={styles.contactInnerRight}>
+                    <ContactForm></ContactForm>
+                </div>
             </div>
         </div>
     </section>;

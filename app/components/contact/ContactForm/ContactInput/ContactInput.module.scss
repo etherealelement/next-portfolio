@@ -1,0 +1,40 @@
+.contactLabel{
+  display: block;
+  margin-bottom: 34px;
+
+  &:nth-child(4) {
+    margin-bottom: 51px;
+  }
+
+  &Text {
+    display: block;
+    margin-bottom: 8px;
+    font-family: "Lato";
+    font-weight: 600;
+    font-size: 20px;
+    color: #F2F2F2;
+  }
+
+  &Input {
+    font-family: "Lato";
+    font-weight: 400;
+    font-size: 22px;
+    padding-top: 6px;
+    padding-left: 22px;
+    width: 100%;
+    height: 76px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    border-radius: 4px;
+
+
+    &::placeholder {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 128.9%;
+      color: #B7BFD1;
+    }
+  }
+}

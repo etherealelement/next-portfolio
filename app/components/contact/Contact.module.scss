@@ -2,7 +2,9 @@
   margin-top: 240px;
 
   &Inner {
-    margin-top: 102px;
+    padding-top: 102px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   .contactInnerLeftText {
@@ -10,10 +12,15 @@
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
-    color: #F2F2F2
+    line-height: 24px;
+    color: #F2F2F2;
+    margin-bottom: 88px;
   }
 
   .contactInnerLeftTitle{
+    margin-bottom: 67px;
+    max-width: 154px;
+    position: relative;
     &Text{
       font-family: 'Raleway';
       font-style: normal;
@@ -21,6 +28,17 @@
       font-size: 24px;
       line-height: 24px;
       color: #FFFFFF;
+    }
+    &Icon{
+      position: absolute;
+      top: 15px;
+      left: -22px;
+    }
+    &Border {
+      margin-top: 17px;
+      display: block;
+      height: 2px;
+      background: linear-gradient(89.99deg, #00D1FF 0%, rgba(255, 34, 141, 0) 100%);
     }
   }
 }

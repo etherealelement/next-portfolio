@@ -1,0 +1,23 @@
+.contactForm{
+  display: flex;
+  flex-direction: column;
+
+  &Label {
+    display: block;
+    margin-bottom: 34px;
+    margin-top: 43px;
+
+    &:nth-child(4) {
+      margin-bottom: 51px;
+    }
+
+    &Text {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 24px;
+      color: #F2F2F2;
+    }
+  }
+}
