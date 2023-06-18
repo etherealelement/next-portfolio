@@ -33,10 +33,10 @@ export const ContactForm: FC = ():JSX.Element => {
         <Button
         styleProp="long"
         >Отправить заявку</Button>
-        <label htmlFor="" className={styles.contactFormLabel}>
-            <input type="checkbox" className={styles.contactFormLabelInput}/>
-            <span className={styles.contactFormLabelSpan}></span>
-            <span className={styles.contactFormLabelText}>Нажимая на кнопку «Отправить заявку», я соглашаюсь с Политикой конфиденциальности и даю Соглас ие на обработку персональных данных.</span>
+        <label htmlFor="" className={styles.contactFormCheckbox}>
+            <input type="checkbox" className={styles.contactFormCheckboxInput}/>
+            <span className={styles.contactFormCheckboxSpan}></span>
+            <span className={styles.contactFormCheckboxText}>Нажимая на кнопку «Отправить заявку», я соглашаюсь с Политикой конфиденциальности и даю Соглас ие на обработку персональных данных.</span>
         </label>
     </form>;
 };
