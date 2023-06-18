@@ -2,6 +2,9 @@ import './globals.css'
 import {Lato} from 'next/font/google'
 import {NextFont} from "next/dist/compiled/@next/font";
 import "./utils/helpers/reset.scss";
+import {ToastContainer} from "react-toastify";
+import "react-toastify/dist/ReactToastify.css"
+
 
 const lato: NextFont = Lato({
     subsets: ['latin'],
@@ -25,12 +28,23 @@ export default function RootLayout({
     children: React.ReactNode
 }) {
     return (
-        <html lang="en">
-        <body className={lato.className}>
-        <div>
-            {children}
-        </div>
-        </body>
-        </html>
+        <>
+            <html lang="en">
+            <body className={lato.className}>
+            <div>
+                {children}
+
+                <ToastContainer
+                position="bottom-right"
+                hideProgressBar={false}
+                closeOnClick
+                rtl={false}
+                theme="light"
+                ></ToastContainer>
+            </div>
+            </body>
+            </html>
+        </>
+
     )
 }

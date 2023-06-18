@@ -1,4 +1,4 @@
-.contactForm{
+.contactForm {
   display: flex;
   flex-direction: column;
 
@@ -7,6 +7,7 @@
     cursor: pointer;
     display: flex;
     margin-top: 43px;
+
     &Text {
       user-select: none;
       font-family: "Lato";
@@ -46,13 +47,17 @@
       animation: pop 180ms ease-in;
     }
 
-    &Input:focus + &Span::before{
+    &Input:focus + &Span::before {
       outline: 2px;
+    }
+
+    &Link {
+      color: #0CAED5;
     }
   }
 
   @keyframes pop {
-    0%{
+    0% {
       transform: scale(0);
     }
     90% {
