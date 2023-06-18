@@ -1,0 +1,26 @@
+.contact{
+  margin-top: 240px;
+
+  &Inner {
+    margin-top: 102px;
+  }
+
+  .contactInnerLeftText {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: #F2F2F2
+  }
+
+  .contactInnerLeftTitle{
+    &Text{
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 24px;
+      color: #FFFFFF;
+    }
+  }
+}
