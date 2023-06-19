@@ -35,6 +35,10 @@
       font-size: 22px;
       line-height: 128.9%;
       color: #B7BFD1;
+
+      @media  all and (max-width: 600px) {
+        font-size: 15px;
+      }
     }
   }
 }

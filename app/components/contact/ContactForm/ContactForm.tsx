@@ -6,22 +6,30 @@ import {Button} from "@/app/components/ui/button/Button";
 import Link from "next/link";
 import emailjs from "@emailjs/browser"
 import {toast} from "react-toastify";
+import {PropagateLoader} from "react-spinners";
 
 
 export const ContactForm: FC = ():JSX.Element => {
+    const [spinner, setSpinner] = useState(false);
     const [acceptWithRules, setAcceptWithRules] = useState(false);
-    const formRef = useRef() as MutableRefObject<HTMLFormElement>
+    const formRef: MutableRefObject<HTMLFormElement> = useRef() as MutableRefObject<HTMLFormElement>
 
     // отправка данных на EmailJS сервер
     const sendEmail = (e: FormEvent<HTMLFormElement>):void => {
         e.preventDefault();
 
+
+        setSpinner(true)
         emailjs.sendForm("service_iwcwg32", "template_xf4putg",formRef.current, "Z1tp-R_4MiXr-iQ9a")
             .then(result => {
-                toast(`Данные отправлены ${result.text}`)
+                setSpinner(false)
+                toast(`Данные отправлены 👌`)
             }, error => {
-                toast(`Данные отправлены ${error.text}`)
+                setSpinner(false)
+                toast(`Данные не отправлены 😢`)
             })
+
+        formRef.current.reset()
     }
 
 
@@ -55,7 +63,9 @@ export const ContactForm: FC = ():JSX.Element => {
         <Button
             isDisable={!acceptWithRules}
         styleProp="long"
-        >Отправить заявку</Button>
+        >
+            {spinner ? <PropagateLoader color="#fff"></PropagateLoader> : "Отправить заявку"}
+        </Button>
         <label htmlFor="" className={styles.contactFormCheckbox}>
             <input
                 onChange={toggleAcceptWithRules}
