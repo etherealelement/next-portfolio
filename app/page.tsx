@@ -7,13 +7,13 @@ import {useState} from "react";
 export default function Home() {
     const [preloader, setPreloader] = useState(false)
 
-    window.addEventListener("load", ()=> {
-        setPreloader(!preloader)
-    }, true)
+    // window.addEventListener("load", ()=> {
+    //     setPreloader(!preloader)
+    // })
 
     return (
         <>
-            {preloader ? <MainPage></MainPage> : <Preloader></Preloader>}
+            {!preloader ? <MainPage></MainPage> : <Preloader></Preloader>}
         </>
     )
 }

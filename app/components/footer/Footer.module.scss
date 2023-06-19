@@ -1,0 +1,112 @@
+.footer{
+  padding-top: 60px;
+  padding-bottom: 71px;
+  &Border {
+    margin-bottom: 24px;
+    display: block;
+    height: 3px;
+    background: linear-gradient(89.99deg, #00D1FF 0%, rgba(255, 34, 141, 0) 100%);
+  }
+
+  &Inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @media all and (max-width: 600px) {
+      gap: 50px;
+    }
+  }
+
+  &Left {
+    width: 17%;
+    @media all and (max-width: 1080px) {
+      margin-bottom: 50px;
+    }
+
+    @media all and (max-width: 700px) {
+      margin-bottom: 20px;
+      display: grid;
+      grid-template-columns: 2fr;
+    }
+  }
+
+  &Copy {
+    margin-top: 48px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 128.9%;
+    color: #B7BFD1;
+
+    @media all and (max-width: 1200px) {
+      margin-bottom: 50px;
+    }
+  }
+
+  &Right {
+    &Top {
+      display: flex;
+      align-items: center;
+
+      @media all and (max-width: 1080px) {
+        justify-content: center;
+      }
+      &Text {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        color: #F2F2F2;
+        margin-right: 50px;
+        @media all and (max-width: 1080px) {
+          display: none;
+        }
+      }
+    }
+    &Bottom {
+
+    }
+  }
+
+  &List {
+    column-count: 2;
+    margin-top: 51px;
+
+    @media all and (max-width: 1080px) {
+      display: grid;
+      grid-template-columns: 2fr;
+      max-width: 600px;
+    }
+
+    @media all and (max-width: 700px) {
+      display: block;
+    }
+    &Item {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 128.9%;
+      color: #06CAF9;
+      &:first-child {
+        margin-bottom: 19px;
+      }
+
+      &:nth-child(3) {
+        margin-left: -43px;
+        margin-bottom: 19px;
+      }
+
+      &:nth-child(4) {
+       margin-left: -43px;
+      }
+
+      @media all and (max-width: 1080px) {
+        display: none;
+        max-width: 500px;
+      }
+    }
+  }
+}

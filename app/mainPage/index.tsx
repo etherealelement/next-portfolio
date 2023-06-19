@@ -5,8 +5,8 @@ import {About} from "@/app/components/about/About";
 import {Skills} from "@/app/components/skills/Skills";
 import {Portfolio} from "@/app/components/portfolio/Portfolio";
 import {Contact} from "@/app/components/contact/Contact";
-import {Preloader} from "@/app/components/preloader/Preloader";
-import {FC, useState} from "react";
+import {FC} from "react";
+import {Footer} from "@/app/components/footer/Footer";
 
 
 export const MainPage: FC = (): JSX.Element => {
@@ -18,6 +18,7 @@ export const MainPage: FC = (): JSX.Element => {
             <Skills></Skills>
             <Portfolio></Portfolio>
             <Contact></Contact>
+            <Footer></Footer>
         </main>
         <div className="background-animation">
             <div id="ball-one"></div>
