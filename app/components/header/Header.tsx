@@ -36,7 +36,7 @@ export const Header: FC = () => {
                            <li className={currentMenuItemClass}>
                                <Link
                                    className={styles.headerContainerNavListItemsLink}
-                                   href="#about"
+                                   href={"#about"}
                                >
                                    Обо мне
                                </Link>
@@ -44,7 +44,7 @@ export const Header: FC = () => {
                            <li className={currentMenuItemClass}>
                                <Link
                                    className={styles.headerContainerNavListItemsLink}
-                                   href="#skills"
+                                   href={"#skills"}
                                >
                                    Навыки
                                </Link>
@@ -54,7 +54,7 @@ export const Header: FC = () => {
 
                                <Link
                                    className={styles.headerContainerNavListItemsLink}
-                                   href="#portfolio"
+                                   href={"#portfolio"}
                                >
                                    Портфолио
                                </Link>
@@ -62,7 +62,7 @@ export const Header: FC = () => {
                            <li className={currentMenuItemClass}>
                                <Link
                                    className={styles.headerContainerNavListItemsLink}
-                                   href="#contact"
+                                   href={"#contact"}
                                >
                                    Связаться со мной
                                </Link>

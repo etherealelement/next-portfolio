@@ -57,7 +57,7 @@ export const Hero: FC = ():JSX.Element => {
                     className={styles.heroInnerTitle}>Web development</h1>
                 <p className={styles.heroInnerDescr}>Вы работаете над чем-то великим?<br/>Я с удовольствием помогу вам в этом!<br/>Напишите мне письмо и мы начнем проект<br/> прямо сейчас!</p>
                 <Link
-                href="#contact"
+                href={"#contact"}
                 className={styles.heroInnerBtn}
                 >
                  <Button className={styles.heroInnerBtnButton}>Связаться с разработчиком</Button>
@@ -65,7 +65,7 @@ export const Hero: FC = ():JSX.Element => {
 
 
                 {isMobile && <Link
-                    href="contact"
+                    href={"#contact"}
                     className={styles.heroInnerArrow}
                 >
                     <HeroArrow></HeroArrow>

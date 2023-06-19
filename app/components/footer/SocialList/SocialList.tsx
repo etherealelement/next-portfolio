@@ -20,7 +20,7 @@ export const SocialListFooter: FC = () => {
                 </a>
             </li>
             <li className={styles.socialListItem}>
-                <a href="#" className={styles.socialListItemLink}>
+                <a className={styles.socialListItemLink}>
                     <span className={styles.socialListItemLinkSpn}>ВКонтакте</span>
                     <span className={`${styles.socialListItemLinkIcon} ${styles.socialListItemLinkIconVk}`}>
                        <Image
