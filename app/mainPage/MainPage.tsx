@@ -7,10 +7,12 @@ import {Portfolio} from "@/app/components/portfolio/Portfolio";
 import {Contact} from "@/app/components/contact/Contact";
 import {FC} from "react";
 import {Footer} from "@/app/components/footer/Footer";
+import NextProgress from "next-progress";
 
 
 export const MainPage: FC = (): JSX.Element => {
     return <>
+        <NextProgress></NextProgress>
         <Header></Header>
         <main>
             <Hero></Hero>

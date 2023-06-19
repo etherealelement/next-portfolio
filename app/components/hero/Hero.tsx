@@ -48,15 +48,16 @@ export const Hero: FC = ():JSX.Element => {
     return <>
         <section className={styles.hero}
         style={{backgroundImage: isMobile485 ? '' : `url("/hero-bg${isMobile ? "-mobile" : ""}.png")`}}
+        id="hero"
         >
             <div className="sub-container">
-                <div className={styles.heroInner}></div>
+                <div className={styles.heroInner} id="hero"></div>
                 <h1
                     ref={heroTitle}
                     className={styles.heroInnerTitle}>Web development</h1>
                 <p className={styles.heroInnerDescr}>Вы работаете над чем-то великим?<br/>Я с удовольствием помогу вам в этом!<br/>Напишите мне письмо и мы начнем проект<br/> прямо сейчас!</p>
                 <Link
-                href="contact"
+                href="#contact"
                 className={styles.heroInnerBtn}
                 >
                  <Button className={styles.heroInnerBtnButton}>Связаться с разработчиком</Button>

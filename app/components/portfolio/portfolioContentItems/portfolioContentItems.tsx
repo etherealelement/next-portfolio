@@ -13,8 +13,8 @@ export const PortfolioContentItems: FC<portfolioContentItemsProps> = ({link,desc
         <Link href={link} className={styles.contentLink}>
             <Image
                 src={imgUrl}
-                width={isMobile ? 200 : 422 && isMobile390 ? 200 : 422}
-                height={isMobile ? 200 : 322 && isMobile390 ? 200 : 422}
+                width={isMobile ? 200 : 322 && isMobile390 ? 200 : 522}
+                height={isMobile ? 200 : 222 && isMobile390 ? 200 : 422}
                 alt={description}
                 className={styles.contentLinkImg}
             ></Image>

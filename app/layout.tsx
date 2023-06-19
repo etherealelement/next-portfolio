@@ -5,7 +5,6 @@ import "./utils/helpers/reset.scss";
 import {ToastContainer} from "react-toastify";
 import "react-toastify/dist/ReactToastify.css"
 
-
 const lato: NextFont = Lato({
     subsets: ['latin'],
     weight: "400",
@@ -29,6 +28,7 @@ export default function RootLayout({
 }) {
     return (
         <>
+
             <html lang="en">
             <body className={lato.className}>
             <div>

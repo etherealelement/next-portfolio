@@ -44,7 +44,7 @@ export const Header: FC = () => {
                            <li className={currentMenuItemClass}>
                                <Link
                                    className={styles.headerContainerNavListItemsLink}
-                                   href="/"
+                                   href="#skills"
                                >
                                    Навыки
                                </Link>
@@ -54,7 +54,7 @@ export const Header: FC = () => {
 
                                <Link
                                    className={styles.headerContainerNavListItemsLink}
-                                   href="/"
+                                   href="#portfolio"
                                >
                                    Портфолио
                                </Link>
@@ -62,7 +62,7 @@ export const Header: FC = () => {
                            <li className={currentMenuItemClass}>
                                <Link
                                    className={styles.headerContainerNavListItemsLink}
-                                   href="/"
+                                   href="#contact"
                                >
                                    Связаться со мной
                                </Link>

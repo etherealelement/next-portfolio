@@ -3,13 +3,12 @@ import {MainPage} from "@/app/mainPage/MainPage";
 import {Preloader} from "@/app/components/preloader/Preloader";
 import {useState} from "react";
 
-
 export default function Home() {
     const [preloader, setPreloader] = useState(false)
 
-    // window.addEventListener("load", ()=> {
-    //     setPreloader(!preloader)
-    // })
+    window.addEventListener("load", ()=> {
+        setPreloader(!preloader)
+    })
 
     return (
         <>

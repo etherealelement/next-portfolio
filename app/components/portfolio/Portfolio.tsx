@@ -7,7 +7,7 @@ import {PortfolioContentItems} from "@/app/components/portfolio/portfolioContent
 import {PortfolioArray} from "@/app/utils/helpers/PortfolioArray";
 export const Portfolio: FC = () => {
     return <section className={styles.portfolio}>
-        <div className="container">
+        <div className="container" id="portfolio">
             <Title>ПОРТФОЛИО</Title>
         </div>
         <div className="sub-container">
