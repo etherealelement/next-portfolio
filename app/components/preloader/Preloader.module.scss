@@ -1,0 +1,67 @@
+.preloader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  &Block {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    &Inner {
+      display: flex;
+      align-items: center;
+      font-family: 'Raleway';
+      justify-content: center;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 50px;
+      gap: 20px;
+      h1 {
+        color: #0CAED5;
+
+        @media all and (max-width: 600px) {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
+
+
+
+@keyframes loading {
+  0% { transform: translate(-50%,-50%) rotate(0deg); }
+  100% { transform: translate(-50%,-50%) rotate(360deg); }
+}
+.loading div {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border: 8px solid #93dbe9;
+  border-top-color: transparent;
+  border-radius: 50%;
+}
+.loading div {
+  animation: loading 0.6711409395973155s linear infinite;
+  top: 50px;
+  left: 50px
+}
+.loadingIoSpinnerRolling {
+  width: 64px;
+  height: 64px;
+  display: inline-block;
+  overflow: hidden;
+  background: transparent;
+}
+.loading {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: translateZ(0) scale(0.64);
+  backface-visibility: hidden;
+  transform-origin: 0 0; /* see note above */
+}
+.loading div { box-sizing: content-box; }

@@ -1,27 +1,19 @@
-import {Header} from "@/app/components/header/Header";
-import {Hero} from "@/app/components/hero/Hero";
-import {About} from "@/app/components/about/About";
-import {Skills} from "@/app/components/skills/Skills";
-import {Portfolio} from "@/app/components/portfolio/Portfolio";
-import {Contact} from "@/app/components/contact/Contact";
+"use client"
+import {MainPage} from "@/app/mainPage";
+import {Preloader} from "@/app/components/preloader/Preloader";
+import {useState} from "react";
 
 
 export default function Home() {
+    const [preloader, setPreloader] = useState(false)
+
+    window.addEventListener("load", ()=> {
+        setPreloader(!preloader)
+    }, true)
+
     return (
         <>
-            <Header></Header>
-            <main>
-                <Hero></Hero>
-                <About></About>
-                <Skills></Skills>
-                <Portfolio></Portfolio>
-                <Contact></Contact>
-            </main>
-            <div className="background-animation">
-                <div id="ball-one"></div>
-                <div id="ball-two"></div>
-                <div id="ball-three"></div>
-            </div>
+            {preloader ? <MainPage></MainPage> : <Preloader></Preloader>}
         </>
     )
 }

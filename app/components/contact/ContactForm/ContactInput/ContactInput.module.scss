@@ -27,7 +27,9 @@
     border: 2px solid rgba(255, 255, 255, 0.15);
     border-radius: 4px;
 
-
+    @media  all and (max-width: 600px) {
+      height: 55px;
+    }
     &::placeholder {
       font-family: 'Lato';
       font-style: normal;
