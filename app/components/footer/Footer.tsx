@@ -23,28 +23,28 @@ export const Footer: FC = () => {
                     <div className={styles.footerRightBottom}>
                         <ul className={styles.footerList}>
                             <li className={styles.footerListItem}>
-                                <Link href="/cookie-policy" legacyBehavior>
+                                <Link href="/pages/cookie-policy" legacyBehavior>
                                     <a className={styles.footerListItemLink}>
                                         Политика использования файлов cookie
                                     </a>
                                 </Link>
                             </li>
                             <li className={styles.footerListItem}>
-                                <Link href="/privat-policy" legacyBehavior>
+                                <Link href="/pages/personal-data-policy" legacyBehavior>
+                                    <a className={styles.footerListItemLink}>
+                                        Политика обработки персональных данных
+                                    </a>
+                                </Link>
+                            </li>
+                            <li className={styles.footerListItem}>
+                                <Link href="/pages/personal-policy" legacyBehavior>
                                     <a className={styles.footerListItemLink}>
                                         Политика конфиденциальности
                                     </a>
                                 </Link>
                             </li>
                             <li className={styles.footerListItem}>
-                                <Link href="/privat-policy" legacyBehavior>
-                                    <a className={styles.footerListItemLink}>
-                                        Политика использования файлов cookie
-                                    </a>
-                                </Link>
-                            </li>
-                            <li className={styles.footerListItem}>
-                                <Link href="/personal-policy" legacyBehavior>
+                                <Link href="/pages/privat-policy" legacyBehavior>
                                     <a className={styles.footerListItemLink}>
                                         Согласие на обработку персональных данных клиентов - физических лиц
                                     </a>

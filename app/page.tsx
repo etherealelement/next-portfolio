@@ -1,5 +1,5 @@
 "use client"
-import {MainPage} from "@/app/mainPage";
+import {MainPage} from "@/app/mainPage/MainPage";
 import {Preloader} from "@/app/components/preloader/Preloader";
 import {useState} from "react";
 

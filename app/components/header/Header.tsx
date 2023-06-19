@@ -36,7 +36,7 @@ export const Header: FC = () => {
                            <li className={currentMenuItemClass}>
                                <Link
                                    className={styles.headerContainerNavListItemsLink}
-                                   href="/"
+                                   href="#about"
                                >
                                    Обо мне
                                </Link>
