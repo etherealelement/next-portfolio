@@ -20,7 +20,7 @@ export const About: FC = () => {
         </div>
         <div className={`sub-container ${styles.aboutSubContainer}`}>
             <Image
-                src="/avatar.png"
+                src="https://begeton.com/files/articles/121/10/29/bTNbfnkkzmaycLwLMZI9V2aw4eMzqyAF.jpg.jpeg"
                 width={552}
                 height={557}
                 alt="avatar"
