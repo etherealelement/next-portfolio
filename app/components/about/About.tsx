@@ -19,13 +19,6 @@ export const About: FC = () => {
             <Title>ОБО МНЕ</Title>
         </div>
         <div className={`sub-container ${styles.aboutSubContainer}`}>
-            <Image
-                src="https://begeton.com/files/articles/121/10/29/bTNbfnkkzmaycLwLMZI9V2aw4eMzqyAF.jpg.jpeg"
-                width={552}
-                height={557}
-                alt="avatar"
-                className={styles.aboutSubContainerImg}
-            />
             <div className={styles.aboutSubContainerInner}>
                 <h3 className={styles.aboutSubContainerInnerTitle}>
                     Vitaly Safonov
